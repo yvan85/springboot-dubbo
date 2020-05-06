@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 提供方应用信息，用于计算依赖关系 -->
+    <dubbo:application name="outsource-web"/>
+    <!--DEV环境-->
+    <!--<dubbo:registry protocol="zookeeper" address="zookeeper://10.2.98.128:2181" timeout="30000"/>-->
+    <!--<dubbo:consumer check="false" timeout="60000" retries="0" group="devGroup"/>-->
+
+    <dubbo:registry protocol="zookeeper" address="zookeeper://172.16.81.70:2181" timeout="30000"/>
+    <dubbo:consumer check="false" timeout="60000" retries="0" />
+
+    <dubbo:reference id="openPriceRemote" check="false" interface="com.tujia.tns.price.api.service.price.OpenPriceRemote"/>
+<!--    <dubbo:reference id="salesActTJService" check="false" version="1.0.0" interface="com.tujia.tns.salespromotion.api.SalesActTJService"/>-->
+<!--    <dubbo:reference id="salesActOPService" check="false" version="1.0.0" interface="com.tujia.tns.salespromotion.api.SalesActOPService"/>-->
+<!--    <dubbo:reference id="salesActivityEditRemoteService" check="false" version="1.0.0" interface="com.tujia.tns.salespromotion.api.SalesActivityEditRemoteService"/>-->
+<!--    <dubbo:reference id="houseSearchApiService" check="false" version="1.0.0" interface="com.tujia.tns.baseinfo.api.service.HouseSearchApiService"/>-->
+    <dubbo:reference id="houseApiService" check="false" version="1.0.0" interface="com.tujia.tns.baseinfo.api.service.HouseApiService"/>
+<!--    <dubbo:reference id="houseAuditTnsService" check="false" version="" interface="com.tujia.house.service.audit.HouseAuditTnsService"/>-->
+    <dubbo:reference id="settlementItemService" check="false" version="1.0.0" interface="com.tujia.ploutos.fcss.api.service.SettlementItemService"/>
+
+    <!--<dubbo:reference id="houseSearchApiService" check="false" version="1.0.0" interface="com.tujia.tns.baseinfo.api.service.HouseSearchApiService"/>-->
+    <!--<dubbo:reference id="houseSearchApiService" check="false" version="1.0.0" interface="com.tujia.tns.baseinfo.api.service.HouseSearchApiService"/>-->
+    <!--<dubbo:reference id="houseSearchApiService" check="false" version="1.0.0" interface="com.tujia.tns.baseinfo.api.service.HouseSearchApiService"/>-->
+    <!--<dubbo:reference id="houseSearchApiService" check="false" version="1.0.0" interface="com.tujia.tns.baseinfo.api.service.HouseSearchApiService"/>-->
+    <!--<dubbo:reference id="houseSearchApiService" check="false" version="1.0.0" interface="com.tujia.tns.baseinfo.api.service.HouseSearchApiService"/>-->
+    <!--<dubbo:reference id="houseSearchApiService" check="false" version="1.0.0" interface="com.tujia.tns.baseinfo.api.service.HouseSearchApiService"/>-->
+
+
+</beans>

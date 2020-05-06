@@ -1,0 +1,44 @@
+# kdiff3 ignore
+*.orig
+
+# maven ignore
+target/
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+*.MF
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+test.iml
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# system ignore
+.DS_Store
+Thumbs.db
+
+# package ignore (optional)
+# *.jar
+# *.war
+# *.zip
+# *.tar
+# *.tar.gz
+
+# linux
+.directory
+
+dependency.txt
+
+/bin
+/test-output/

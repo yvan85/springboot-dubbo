@@ -1,0 +1,40 @@
+{
+  "authInfo": {
+    "appId": "1305098420608"
+  },
+  "operator": {
+    "operator": "MERCHANT",
+    "operatorIP": "127.0.0.1"
+  },
+  "bizOrder": {
+    "bizOrderNo": "821735649158",
+    "bizType": 1,
+    "bizSubType": 1,
+    "bizOrderStatus": 1,
+    "orgOrderAmount": 53,
+    "validAmount": 53.00,
+    "prices": [{
+      "saleDate": {
+        "day": 30,
+        "year": 2019,
+        "month": 7
+      },
+      "salePrice": 53,
+      "bottomPrice": 47.52,
+      "orgSalePrice": 0,
+      "orgBottomPrice": 0
+    }
+    ],
+    "count": 1,
+    "salePrice": 53,
+    "bottomPrice": 47.52,
+    "orgSalePrice": 0,
+    "orgBottomPrice": 0
+  },
+  "provider": {
+    "rba": false,
+    "accountNo": 601400742113152,
+    "commissionType": 1,
+    "commissionRate": 0.10
+  }
+}
